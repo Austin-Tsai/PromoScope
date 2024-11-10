@@ -1,0 +1,227 @@
+html, body{
+    height: 100%;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #516776;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D8E5ED;
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+
+.subheaders {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 30px 100px;
+    font-weight: 600;
+    gap: 50px;
+    font-size: 24px;
+}
+
+
+.outlined-white {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000, 0 -1px 0 #000000, 1px -1px 0 #000000, 1px 0 0 #000000,
+        1px 1px 0 #000000, 0 1px 0 #000000, -1px 1px 0 #000000, -1px 0 0 #000000;
+}
+.title.outlined-white{
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #082841, 0 -2px 0 #082841, 2px -2px 0 #082841, 2px 0 0 #082841,
+        2px 2px 0 #082841, 0 2px 0 #082841, -2px 2px 0 #082841, -2px 0 0 #082841;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.buttons {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #36454F;
+    padding: 10px 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+    box-sizing: border-box;
+}
+  
+label {
+margin-bottom: 10px;
+display: block;
+}
+
+.hidden-element {
+opacity: 0; /* Initially hidden */
+pointer-events: none; /* Prevent interaction when hidden */
+transition: opacity 1s ease-out; /* Smooth fade-in transition */
+max-width: 100%; /* Make sure the image scales properly */
+}
+
+.visible {
+opacity: 1; /* Make the image visible */
+pointer-events: auto; /* Allow interaction once visible */
+}
+
+.gated-content, .chart-header, .chart-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.chart-header {
+    background-color: #232d35;
+    padding: 20px 30%;
+    margin-top: 20px;
+}
+
+.chart-section {
+/* background-color: #a7b6be; */
+
+background-color: #2d383f;
+}
+
+#chart-select, #type-select {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #36454F;
+    padding: 10px 20px;
+}
+
+.footer {
+    background-color: #3b4854;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 0px;
+    margin-top: 20px;
+    /* width:100%;
+    left: 0;
+    bottom: 0;
+    position: fixed; */
+}
+
+.left-header {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-left: 30px;
+}
+
+.home-button, .visualization-button, .simulation-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.login-buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.submit-login, .submit-register, .submit-group {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-top: 16px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #082841;
+    padding: 10px 20px;
+}
+
+.analysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#group-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PromoScope</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <div class="left-header">
+            <img height="100" width="auto" src="https://media.discordapp.net/attachments/744749553730715659/1305221169183592568/Designer_3.jpeg?ex=67323d70&is=6730ebf0&hm=044194554ec0f8aeb2eebec80ea0662094dc197bc5e59acefea28c38290a0875&=&format=webp&width=565&height=565">
+            <h1 class="title outlined-white">PromoScope</h1>
+        </div>
+        <div class="subheaders outlined-white">
+            <!-- <button class="home-button clickable outlined-white"> Home </button> -->
+            <!-- <button class="visualization-button clickable outlined-white"> Visualization </button> -->
+            <!-- <button class="simulation-button clickable outlined-white"> Simulation </button> -->
+            <!-- <button class="clickable outlined-white buttons" id="btn-login" disabled="true" onclick="login()" >Log in</button>
+            <button class="clickable outlined-white buttons" id="btn-logout" disabled="true" onclick="logout()">Log out</button> -->
+        </div>
+    </div>  
+
+    <div class="content">
+      <div id="ungated-content" class="outlined-white">
+        <form id="login-form">
+          <div class="login">
+            <label for="uname"><b>Username (5 characters minimum): </b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password (8 characters minimum): </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required minlength="8">
+        
+            <div class="login-buttons">
+              <button class="submit-login" type="submit">Login</button>
+              <button class="submit-register" type="submit">Register</button>
+            </div>
+          </div>
+        </form>
+          <!-- <p>You are not Authorized</p> -->
+      </div>
+      
+      <div id="gated-content" class="hidden outlined-white">
+        <!-- <p>You are Authorized</p> -->
+        <!-- <label>
+          Access token:
+          <pre id="ipt-access-token"></pre>
+        </label>
+        <label>
+          User profile:
+          <pre id="ipt-user-profile"></pre>
+        </label> -->
+        <form id="group-number">
+          <label for="group" style="margin-top: 10px"><b>Get Custom Campaign Link: </b></label>
+          <input type="number" placeholder="Enter Group Number" name="group" min="0" max="255" required>
+          <button class="submit-group" type="submit">Submit</button>
+        </form>
+
+        
+        <div class="hidden-element">
+          <div class="chart-header">
+            <h1 class="chart-title">Email Visualization</h1>
+            <div class="dropdowns">
+              <select id="chart-select" class="outlined-white">
+                <option value="bar" selected>Bar</option>
+                <option value="line">Line</option>
+                <option value="pie">Pie</option>
+                <option value="gauge">Gauge</option>
+              </select>
+              <select id="type-select" class="outlined-white">
+                <option class="browser" value="browser" selected>Browsers</option>
+                <option class="campaign" value="campaign">Campaign</option>
+                <option class="time" value="time">Time</option>
+                <option class="location" value="location">Location</option>
+                <option class="opened" value="opened">Opened</option>
+              </select>
+            </div>
+          </div>
+          <div class="chart-section">
+            <canvas id="chart" width="1000" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="analysis">
+          <h1>Analysis</h1>
+          <p>The best performing groupings were: </p>
+          <p class="writing"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer outlined-white">
+      For MadHacks
+    </div>
+    <!-- <script>window.fetch = (a, b) => console.log(b) </script> -->
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+    <script src="/js/graphs.js"></script>
+  </body>
+  </html>
